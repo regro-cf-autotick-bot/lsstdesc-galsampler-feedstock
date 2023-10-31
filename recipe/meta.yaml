@@ -1,5 +1,5 @@
 {% set name = "lsstdesc-galsampler" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/LSSTDESC/galsampler/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 7ffb2566fa5a24b9c848672693f9c5baf3084a2e84912bc07f1af9de6d5858eb
+  sha256: 1f04206d8035b9fe2570211a3150110b45832d3f0c54e01f56520dbca12a3a2f
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
