@@ -16,11 +16,44 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table>
+    
+  <tr>
+    <td>Azure</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17335&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lsstdesc-galsampler-feedstock?branchName=main">
-      </a>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17335&branchName=main">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lsstdesc-galsampler-feedstock?branchName=main">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17335&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lsstdesc-galsampler-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17335&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lsstdesc-galsampler-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17335&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lsstdesc-galsampler-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
     </td>
   </tr>
 </table>
@@ -30,6 +63,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-galsampler-green.svg)](https://anaconda.org/conda-forge/galsampler) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/galsampler.svg)](https://anaconda.org/conda-forge/galsampler) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/galsampler.svg)](https://anaconda.org/conda-forge/galsampler) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/galsampler.svg)](https://anaconda.org/conda-forge/galsampler) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-lsstdesc--galsampler-green.svg)](https://anaconda.org/conda-forge/lsstdesc-galsampler) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/lsstdesc-galsampler.svg)](https://anaconda.org/conda-forge/lsstdesc-galsampler) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/lsstdesc-galsampler.svg)](https://anaconda.org/conda-forge/lsstdesc-galsampler) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/lsstdesc-galsampler.svg)](https://anaconda.org/conda-forge/lsstdesc-galsampler) |
 
 Installing lsstdesc-galsampler
@@ -42,41 +76,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `lsstdesc-galsampler` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `galsampler, lsstdesc-galsampler` can be installed with `conda`:
 
 ```
-conda install lsstdesc-galsampler
-```
-
-or with `mamba`:
-
-```
-mamba install lsstdesc-galsampler
-```
-
-It is possible to list all of the versions of `lsstdesc-galsampler` available on your platform with `conda`:
-
-```
-conda search lsstdesc-galsampler --channel conda-forge
+conda install galsampler lsstdesc-galsampler
 ```
 
 or with `mamba`:
 
 ```
-mamba search lsstdesc-galsampler --channel conda-forge
+mamba install galsampler lsstdesc-galsampler
+```
+
+It is possible to list all of the versions of `galsampler` available on your platform with `conda`:
+
+```
+conda search galsampler --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search galsampler --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search lsstdesc-galsampler --channel conda-forge
+mamba repoquery search galsampler --channel conda-forge
 
-# List packages depending on `lsstdesc-galsampler`:
-mamba repoquery whoneeds lsstdesc-galsampler --channel conda-forge
+# List packages depending on `galsampler`:
+mamba repoquery whoneeds galsampler --channel conda-forge
 
-# List dependencies of `lsstdesc-galsampler`:
-mamba repoquery depends lsstdesc-galsampler --channel conda-forge
+# List dependencies of `galsampler`:
+mamba repoquery depends galsampler --channel conda-forge
 ```
 
 
