@@ -14,19 +14,32 @@ build:
   number: 0
   noarch: python
 
-requirements:
-  host:
-    - python >=3.7
-    - pip
-  run:
-    - python >=3.7
-    - numpy
-    - scipy
-    - numba
-
-test:
-  imports:
-    - galsampler
+outputs:
+  - name: {{ name }}
+    script: build_it.sh
+    requirements:
+      host:
+        - python >=3.7
+        - pip
+      run:
+        - python >=3.7
+        - numpy
+        - scipy
+        - numba    
+    test:
+      imports:
+        - galsampler
+  
+  - name: galsampler
+    requirements:
+      host:
+        - python >=3.7
+      run:
+        - {{ pin_subpackage("lsstdesc-galsampler", exact=True) }}
+        - python >=3.7
+    test:
+      imports:
+        - galsampler
 
 about:
   home: https://github.com/simplejson/simplejson
