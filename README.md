@@ -1,11 +1,11 @@
-About lsstdesc-galsampler
-=========================
+About lsstdesc-galsampler-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lsstdesc-galsampler-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/simplejson/simplejson
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lsstdesc-galsampler-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for generating synthetic cosmological data
 
