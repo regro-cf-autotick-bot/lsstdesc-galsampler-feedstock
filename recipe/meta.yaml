@@ -26,9 +26,6 @@ outputs:
         - numpy
         - scipy
         - numba    
-    test:
-      imports:
-        - galsampler
   
   - name: galsampler
     requirements:
@@ -38,8 +35,11 @@ outputs:
         - {{ pin_subpackage("lsstdesc-galsampler", exact=True) }}
         - python >=3.7
     test:
-      imports:
-        - galsampler
+      script: do_tests.py
+
+test:
+  imports:
+    - galsampler
 
 about:
   home: https://github.com/LSSTDESC/galsampler
