@@ -3,7 +3,7 @@ About lsstdesc-galsampler-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lsstdesc-galsampler-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/simplejson/simplejson
+Home: https://github.com/LSSTDESC/galsampler
 
 Package license: BSD-3-Clause
 
