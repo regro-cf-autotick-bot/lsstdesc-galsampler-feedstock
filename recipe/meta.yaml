@@ -18,11 +18,11 @@ outputs:
     script: build_it.sh
     requirements:
       host:
-        - python >=3.7
+        - python >=3.7,<3.12
         - pip
         - setuptools_scm
       run:
-        - python >=3.7
+        - python >=3.7,<3.12
         - numpy
         - scipy
         - numba    
@@ -30,10 +30,10 @@ outputs:
   - name: galsampler
     requirements:
       host:
-        - python >=3.7
+        - python >=3.7,<3.12
       run:
         - {{ pin_subpackage("lsstdesc-galsampler", exact=True) }}
-        - python >=3.7
+        - python >=3.7,<3.12
     test:
       script: do_tests.py
 
