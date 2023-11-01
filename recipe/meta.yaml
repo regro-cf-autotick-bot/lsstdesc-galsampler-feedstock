@@ -16,6 +16,8 @@ build:
 outputs:
   - name: {{ name }}
     script: build_it.sh
+    build:
+      noarch: python
     requirements:
       host:
         - python >=3.7,<3.12
@@ -28,6 +30,8 @@ outputs:
         - numba    
   
   - name: galsampler
+    build:
+      noarch: python
     requirements:
       host:
         - python >=3.7,<3.12
