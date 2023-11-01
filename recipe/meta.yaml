@@ -20,6 +20,7 @@ outputs:
       host:
         - python >=3.7
         - pip
+        - setuptools_scm
       run:
         - python >=3.7
         - numpy
@@ -41,13 +42,13 @@ outputs:
         - galsampler
 
 about:
-  home: https://github.com/simplejson/simplejson
+  home: https://github.com/LSSTDESC/galsampler
   summary: 'Tools for generating synthetic cosmological data'
   description: |
     Tools for generating synthetic cosmological data
   license: BSD-3-Clause
   license_family: BSD
-  license_file: LICENSE
+  license_file: LICENSE.rst
 
 extra:
   recipe-maintainers:
