@@ -13,6 +13,10 @@ build:
   number: 0
   noarch: python
 
+test:
+  imports:
+    - galsampler
+
 outputs:
   - name: {{ name }}
     script: build_it.sh
@@ -40,10 +44,6 @@ outputs:
         - python >=3.7,<3.12
     test:
       script: do_tests.py
-
-test:
-  imports:
-    - galsampler
 
 about:
   home: https://github.com/LSSTDESC/galsampler
