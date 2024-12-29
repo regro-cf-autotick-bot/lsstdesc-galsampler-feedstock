@@ -10,10 +10,12 @@ source:
   sha256: 1f04206d8035b9fe2570211a3150110b45832d3f0c54e01f56520dbca12a3a2f
 
 build:
-  number: 0
+  number: 1
   noarch: python
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - galsampler
 
@@ -24,11 +26,11 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.7,<3.12
+        - python {{ python_min }}
         - pip
         - setuptools_scm
       run:
-        - python >=3.7,<3.12
+        - python >={{ python_min }},<3.12
         - numpy
         - scipy
         - numba    
@@ -38,11 +40,13 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.7,<3.12
+        - python {{ python_min }}
       run:
         - {{ pin_subpackage("lsstdesc-galsampler", exact=True) }}
-        - python >=3.7,<3.12
+        - python >={{ python_min }},<3.12
     test:
+      requires:
+        - python {{ python_min }}
       script: do_tests.py
 
 about:
