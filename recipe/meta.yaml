@@ -27,6 +27,7 @@ outputs:
     requirements:
       host:
         - python {{ python_min }}
+        - setuptools
         - pip
         - setuptools_scm
       run:
